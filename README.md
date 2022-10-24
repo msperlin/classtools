@@ -1,4 +1,10 @@
 # Repository for R package classtools
 
-Includes functions for personal use in class content creation with R.
+This package includes many functions that I use for:
+
+- exams creation with package `exams`
+- grading exams
+- formatting numbers and tables for class content
+
+
 

@@ -7,8 +7,14 @@
 print_pretty_df(df)
 }
 \arguments{
-\item{df}{}
+\item{df}{a dataframe}
+}
+\value{
+a pretty html table
 }
 \description{
 prints a pretty dataframe
+}
+\examples{
+print_pretty_df(dplyr::tibble(x = 1, y = 2))
 }

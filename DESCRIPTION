@@ -20,9 +20,7 @@ Imports:
   fs,
   exams,
   glue,
-  janitor,
-  knitr,
-  remotes
+  knitr
 Suggests: 
     testthat (>= 3.0.0),
     ggplot2,
