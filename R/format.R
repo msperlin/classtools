@@ -255,3 +255,25 @@ format_vec_as_text <- function(str_in) {
   return(str_out)
 
 }
+
+#' prints a pretty dataframe
+#'
+#' @param df
+#'
+#' @return
+#' @export
+#'
+#' @examples
+print_pretty_df <- function(df) {
+  #my.align <- paste0('|l|', paste0(rep('l', ncol(df)-1), collapse = '|'), '|'  )
+  #knitr::kable(df, row.names = F, format = 'html', align = my.align,digits = 2, format.args = list(decimal = ',') )
+  #require(kableExtra)
+
+  knitr::kable(df, row.names = F,
+               format.args = list(decimal.mark = ',',
+                                  digits =5))
+  #df %>%
+  #kbl(centering = FALSE, booktabs = TRUE)
+
+}
+

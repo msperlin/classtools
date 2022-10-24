@@ -14,20 +14,18 @@ RoxygenNote: 7.2.1
 Depends: R (>= 4.0.0)
 Imports: 
   readr,
-  crayon,
+  stringr,
   scales,
   cli, 
   fs,
+  exams,
+  glue,
+  janitor,
   knitr,
   remotes
-Remotes:
-  msperlin/yfR,
-  clauswilke/dviz.supp,
-  clauswilke/colorblindr
 Suggests: 
     testthat (>= 3.0.0),
     ggplot2,
-    stringr,
     tibble,
     tidyr,
     dplyr,
