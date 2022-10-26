@@ -15,10 +15,10 @@ first_date <- last_date - 5*365
 
 sp500 <- yfR::yf_index_composition("SP500")
 
-tickers <- sample(
-  sp500$ticker,
-  n_stocks
-)
+tickers <- c(
+  sample(sp500$ticker,
+         n_stocks),
+  '^GSPC')
 
 df_sp500 <- yfR::yf_get(tickers,
                         first_date,
