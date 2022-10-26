@@ -4,7 +4,7 @@
 \alias{sample_yield_rate}
 \title{Samples a yield rate}
 \usage{
-sample_yield_rate(min_value = 0.05, max_value = 0.25, n_bins = 10)
+sample_yield_rate(min_value = 0.025, max_value = 0.25, n_bins = 50)
 }
 \arguments{
 \item{min_value}{min value}

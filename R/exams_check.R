@@ -20,6 +20,11 @@ check_answers <- function(answers_in) {
     stop('Found question with less or more than 5 UNIQUE answers..')
   }
 
+  n_na <- sum(is.na(answers_in))
+  if (n_na > 0){
+    stop('Found NA in answers...')
+  }
+
   flag <- any(stringr::str_trim(answers_in) == '')
   if (flag) {
     stop('Found question with empty answer..')

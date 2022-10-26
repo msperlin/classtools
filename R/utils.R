@@ -16,7 +16,6 @@ get_email_text <- function(class_name,
   # makes sure week days are correct
   Sys.setlocale("LC_TIME", "pt_BR.UTF-8")
 
-
   l_str <- readr::read_rds(
     fs::path(
       system.file('extdata/other-data', package = "classtools"),
@@ -27,7 +26,7 @@ get_email_text <- function(class_name,
 
   body <- stringr::str_glue(l_str$body)
 
-  link_github <- "https://github.com/msperlin/classtools/tree/main/inst/extdata/data"
+  link_github <- get_link_github()
 
   links <- stringr::str_glue(l_str$links)
 
@@ -41,3 +40,7 @@ get_email_text <- function(class_name,
   return(invisible(TRUE))
 }
 
+get_link_github <- function() {
+  link_github <- "https://github.com/msperlin/classtools/tree/main/inst/extdata/data"
+  return(link_github)
+}
