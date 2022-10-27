@@ -5,7 +5,7 @@ fix.na <- TRUE
 bench_ticker <- '^GSPC'
 
 my_name <-'SP500-stocks'
-n_stocks <- 50
+n_stocks <- 30
 last_date <- Sys.Date()
 first_date <- last_date - 5*365
 
@@ -26,7 +26,11 @@ df_sp500 <- yfR::yf_get(tickers,
                         thresh_bad_data = thresh)
 
 df_sp500 <- df_sp500 |>
-  dplyr::select(ticker, ref_date, price_close, price_adjusted, ret_adjusted_prices) |>
+  dplyr::select(ref_date,
+                ticker,
+                price_close,
+                price_adjusted,
+                ret_adjusted_prices) |>
   na.omit()
 
 f_out <- fs::path(
