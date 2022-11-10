@@ -1,7 +1,6 @@
-
 #' Get path of data file
 #'
-#' @param f_in
+#' @param f_in Name of file
 #'
 #' @return a path
 #' @export

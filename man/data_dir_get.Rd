@@ -7,7 +7,7 @@
 data_dir_get(f_in)
 }
 \arguments{
-\item{f_in}{}
+\item{f_in}{Name of file}
 }
 \value{
 a path
