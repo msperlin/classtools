@@ -1,3 +1,13 @@
+
+#' Get path of data file
+#'
+#' @param f_in
+#'
+#' @return a path
+#' @export
+#'
+#' @examples
+#' data_dir_get('B3-stocks.rds')
 data_dir_get <- function(f_in) {
 
   dir_pkg <- system.file("extdata/data", package = 'classtools')

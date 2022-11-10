@@ -2,6 +2,7 @@
 
 export(build_answers_text)
 export(check_answers)
+export(data_dir_get)
 export(format_cash)
 export(format_date)
 export(format_number)
