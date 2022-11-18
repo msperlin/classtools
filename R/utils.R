@@ -44,3 +44,10 @@ get_link_github <- function() {
   link_github <- "https://github.com/msperlin/classtools/tree/main/inst/extdata/data"
   return(link_github)
 }
+
+get_path_package <- function() {
+
+  pkg_path <- system.file('extdata', package = "classtools")
+
+  return(pkg_path)
+}

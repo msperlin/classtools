@@ -35,7 +35,13 @@ my_exams2moodle <- function(exercise_files,
                iname = FALSE,
                quiet = TRUE)
 
-  exams::exams2html(file = exercise_files, n = 1, solution = FALSE)
+  my_template <- fs::path(get_path_package(), 'templates',
+                          'plain8.html')
+
+  exams::exams2html(file = exercise_files,
+                    n = 1,
+                    solution = FALSE,
+                    template = my_template)
 
   n_q <- length(exercise_files)
 
